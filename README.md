@@ -68,9 +68,6 @@ TypeScript	Frontend logic
 OpenWeatherMap – Current Weather API
 🔗 https://openweathermap.org/current
 
-Sample API Call
-https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=YOUR_API_KEY&units=metric
-
 🔁 End-to-End Application Flow
 1️⃣ User Interaction
 
