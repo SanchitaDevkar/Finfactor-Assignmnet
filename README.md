@@ -40,11 +40,11 @@ Polished frontend UI & UX
 🏗 System Architecture
 Frontend (Angular)
         |
-        |  HTTP Request
+        | HTTP Request
         v
 Backend (Spring Boot REST API)
         |
-        |  Fetch / Cache
+        | Fetch / Cache
         v
 OpenWeatherMap API
 
@@ -64,12 +64,11 @@ HTML5	Markup
 CSS3	Styling & animations
 TypeScript	Frontend logic
 🌐 External API Used
-OpenWeatherMap – Current Weather API
 
+OpenWeatherMap – Current Weather API
 🔗 https://openweathermap.org/current
 
 Sample API Call
-
 https://api.openweathermap.org/data/2.5/weather?q=Pune&appid=YOUR_API_KEY&units=metric
 
 🔁 End-to-End Application Flow
@@ -131,9 +130,7 @@ Expiry handled using cachedAt
 🔹 Get Weather by City
 GET /api/weather/{city}
 
-
 Example
-
 GET http://localhost:8080/api/weather/Pune
 
 ✅ Success Response (200 OK)
