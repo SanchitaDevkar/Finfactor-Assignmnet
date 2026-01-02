@@ -1,0 +1,29 @@
+<!-- Weather Result -->
+<div *ngIf="!loading && weatherData" class="card fade-in">
+  
+  <!-- City and Country -->
+  <h3>
+    {{ weatherData.city }},
+    {{ weatherData.country }}
+  </h3>
+
+  <!-- Weather Icon -->
+  <img
+    class="icon"
+    [src]="'https://openweathermap.org/img/wn/' + weatherData.icon + '@2x.png'"
+    alt="weather icon"
+  />
+
+  <!-- Main weather details -->
+  <p>🌡 Temperature: {{ weatherData.temperature }} °C</p>
+  <p>🤒 Feels Like: {{ weatherData.feelsLike }} °C</p>
+  <p>💧 Humidity: {{ weatherData.humidity }} %</p>
+  <p>🌬 Wind Speed: {{ weatherData.windSpeed }} m/s</p>
+  <p>☁ Condition: {{ weatherData.description }}</p>
+
+  <!-- Optional: Last cached time 
+  <p *ngIf="weatherData.cachedAt">
+    ⏱ Last Updated: {{ weatherData.cachedAt | date:'short' }}
+  </p>-->
+
+</div>
